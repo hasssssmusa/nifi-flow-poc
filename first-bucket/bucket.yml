@@ -1,5 +1,5 @@
 flows:
-  bd4e2299-c9e6-433a-b4fd-bcb30a65ae6d: {ver: 1, file: test.snapshot, comments: '',
-    author: anonymous, created: 1734716193911, flowName: test, flowDesc: ''}
+  bd4e2299-c9e6-433a-b4fd-bcb30a65ae6d: {ver: 2, file: test.snapshot, comments: '',
+    author: anonymous, created: 1734719869707, flowName: test, flowDesc: ''}
 layoutVer: 1
 bucketId: 5d794801-a29e-4361-9bfb-2b836e442a80

@@ -8,7 +8,40 @@
       "flowContents" : {
         "comments" : "",
         "componentType" : "PROCESS_GROUP",
-        "connections" : [ ],
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "1145b969-c3ba-37ce-bcab-c9a225ac3ec8",
+            "id" : "fc9da81d-103c-3ead-a23e-604402ec2942",
+            "instanceIdentifier" : "e512bb9e-0193-1000-266d-9a4cd88e867c",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "1145b969-c3ba-37ce-bcab-c9a225ac3ec8",
+          "identifier" : "3b7ca108-b225-30fc-9d70-79cfecfdbd30",
+          "instanceIdentifier" : "e55bb774-0193-1000-7acc-f085d961de2b",
+          "labelIndex" : 0,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "1145b969-c3ba-37ce-bcab-c9a225ac3ec8",
+            "id" : "49232044-940a-32c4-9140-a62648082cb5",
+            "instanceIdentifier" : "e512a6b4-0193-1000-3e37-8eb5dd21900e",
+            "name" : "GenerateFlowFile",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
         "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
         "defaultBackPressureObjectThreshold" : 10000,
@@ -30,7 +63,7 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ ],
+          "autoTerminatedRelationships" : [ "success" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
